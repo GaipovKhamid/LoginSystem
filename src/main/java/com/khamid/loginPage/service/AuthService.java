@@ -9,14 +9,5 @@ import java.util.Optional;
 
 @Service
 public class AuthService {
-    private ProfileRepository profileRepository;
-
-    public String regisrtation(RegistrationDTO dto) {
-        Optional<RegistrationEntity> optional = profileRepository.findByUsername(dto);
-        if (optional.isPresent()) {
-            return "Email already exist";
-        }
-        return null;
-    }
 
 }

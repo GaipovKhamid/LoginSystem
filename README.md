@@ -7,4 +7,4 @@ What technology did I use:
 - Postgresql
 
 It`s a project structure:
-![](Flowchart.jpg)
+![](src/main/resources/Flowchart.jpg)
