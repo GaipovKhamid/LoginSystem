@@ -5,3 +5,6 @@ What technology did I use:
 - Spring Data, 
 - Hybernate, 
 - Postgresql
+
+It`s a project structure:
+![](Flowchart.jpg)
