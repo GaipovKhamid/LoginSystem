@@ -1,13 +1,20 @@
-package com.khamid.loginPage.dto;
+package com.khamid.loginPage.entity;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+@Table(name = "users")
+@Entity
 @Getter
-@Setter    
-public class RegistrationDTO {
+@Setter
+public class AuthEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column
     private String email;
+    @Column
     private String password;
 
     public Integer getId() {
